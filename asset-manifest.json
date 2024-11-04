@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.be745737.css",
-    "main.js": "/static/js/main.77b6030a.js",
+    "main.js": "/static/js/main.f6053d92.js",
     "static/js/453.40fbd8ec.chunk.js": "/static/js/453.40fbd8ec.chunk.js",
     "static/media/dumbbells-floor-gym-ai-generative.jpg": "/static/media/dumbbells-floor-gym-ai-generative.df7979f3287159b47a72.jpg",
     "static/media/gpt5.png": "/static/media/gpt5.4a38c1cd6166247c3b8e.png",
@@ -9,11 +9,11 @@
     "static/media/logo3.png": "/static/media/logo3.b510b307d6f836b0566a.png",
     "index.html": "/index.html",
     "main.be745737.css.map": "/static/css/main.be745737.css.map",
-    "main.77b6030a.js.map": "/static/js/main.77b6030a.js.map",
+    "main.f6053d92.js.map": "/static/js/main.f6053d92.js.map",
     "453.40fbd8ec.chunk.js.map": "/static/js/453.40fbd8ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be745737.css",
-    "static/js/main.77b6030a.js"
+    "static/js/main.f6053d92.js"
   ]
 }
