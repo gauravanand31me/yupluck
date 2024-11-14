@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.70b410e7.css",
-    "main.js": "/static/js/main.6f4418de.js",
+    "main.css": "/static/css/main.ab03fa28.css",
+    "main.js": "/static/js/main.eae1eaff.js",
     "static/js/453.40fbd8ec.chunk.js": "/static/js/453.40fbd8ec.chunk.js",
     "static/media/dumbbells-floor-gym-ai-generative.jpg": "/static/media/dumbbells-floor-gym-ai-generative.df7979f3287159b47a72.jpg",
     "static/media/gpt5.png": "/static/media/gpt5.4a38c1cd6166247c3b8e.png",
@@ -10,12 +10,12 @@
     "static/media/success.mpeg": "/static/media/success.55a17596202a3872e3b3.mpeg",
     "static/media/fail.mpeg": "/static/media/fail.221aaf1492ddba90c447.mpeg",
     "index.html": "/index.html",
-    "main.70b410e7.css.map": "/static/css/main.70b410e7.css.map",
-    "main.6f4418de.js.map": "/static/js/main.6f4418de.js.map",
+    "main.ab03fa28.css.map": "/static/css/main.ab03fa28.css.map",
+    "main.eae1eaff.js.map": "/static/js/main.eae1eaff.js.map",
     "453.40fbd8ec.chunk.js.map": "/static/js/453.40fbd8ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70b410e7.css",
-    "static/js/main.6f4418de.js"
+    "static/css/main.ab03fa28.css",
+    "static/js/main.eae1eaff.js"
   ]
 }
