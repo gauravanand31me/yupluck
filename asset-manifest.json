@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5fdaa3b.css",
-    "main.js": "/static/js/main.128824a1.js",
-    "static/js/453.40fbd8ec.chunk.js": "/static/js/453.40fbd8ec.chunk.js",
+    "main.css": "/static/css/main.3f80861d.css",
+    "main.js": "/static/js/main.a91d2150.js",
+    "static/js/453.1ceeaf73.chunk.js": "/static/js/453.1ceeaf73.chunk.js",
     "static/media/dumbbells-floor-gym-ai-generative.jpg": "/static/media/dumbbells-floor-gym-ai-generative.df7979f3287159b47a72.jpg",
     "static/media/hero-background.jpg": "/static/media/hero-background.d3307ee3113fa5a06412.jpg",
     "static/media/gpt5.png": "/static/media/gpt5.4a38c1cd6166247c3b8e.png",
-    "static/media/gpt.jpg": "/static/media/gpt.5bcc25a6d35f2c0bd682.jpg",
     "static/media/logo3.png": "/static/media/logo3.b510b307d6f836b0566a.png",
     "static/media/success.mpeg": "/static/media/success.55a17596202a3872e3b3.mpeg",
+    "static/media/yupluck app 4.png": "/static/media/yupluck app 4.19c6a68fc44dd44f5f09.png",
+    "static/media/yupluck app 5.png": "/static/media/yupluck app 5.8f7f2ee416c939570829.png",
+    "static/media/yupluck app 3.png": "/static/media/yupluck app 3.ae2a63d84c7d9a28a337.png",
     "static/media/fail.mpeg": "/static/media/fail.221aaf1492ddba90c447.mpeg",
+    "static/media/yupluck app.png": "/static/media/yupluck app.fea8811acc0bbc43046b.png",
+    "static/media/yupluck app 2.png": "/static/media/yupluck app 2.030cf278e3b2f53df7e7.png",
     "index.html": "/index.html",
-    "main.e5fdaa3b.css.map": "/static/css/main.e5fdaa3b.css.map",
-    "main.128824a1.js.map": "/static/js/main.128824a1.js.map",
-    "453.40fbd8ec.chunk.js.map": "/static/js/453.40fbd8ec.chunk.js.map"
+    "main.3f80861d.css.map": "/static/css/main.3f80861d.css.map",
+    "main.a91d2150.js.map": "/static/js/main.a91d2150.js.map",
+    "453.1ceeaf73.chunk.js.map": "/static/js/453.1ceeaf73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5fdaa3b.css",
-    "static/js/main.128824a1.js"
+    "static/css/main.3f80861d.css",
+    "static/js/main.a91d2150.js"
   ]
 }
