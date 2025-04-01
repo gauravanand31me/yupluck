@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.457cc46d.css",
-    "main.js": "/static/js/main.0bad6b29.js",
+    "main.js": "/static/js/main.fa798b89.js",
     "static/js/453.40fbd8ec.chunk.js": "/static/js/453.40fbd8ec.chunk.js",
     "static/media/dumbbells-floor-gym-ai-generative.jpg": "/static/media/dumbbells-floor-gym-ai-generative.df7979f3287159b47a72.jpg",
     "static/media/yupluck app.png": "/static/media/yupluck app.012d2920148e4da2e149.png",
-    "static/media/yupluck-promo-banner.png": "/static/media/yupluck-promo-banner.012d2920148e4da2e149.png",
+    "static/media/yupluck-promo-banner.png": "/static/media/yupluck-promo-banner.8c3bebf014a8c2e34cf4.png",
     "static/media/yupluck app 3.png": "/static/media/yupluck app 3.a79f81d13f5155f5ba48.png",
     "static/media/hero-background.jpg": "/static/media/hero-background.d3307ee3113fa5a06412.jpg",
     "static/media/yupluck-hero.png": "/static/media/yupluck-hero.37a81f98075086d327ee.png",
@@ -14,11 +14,11 @@
     "static/media/fail.mpeg": "/static/media/fail.221aaf1492ddba90c447.mpeg",
     "index.html": "/index.html",
     "main.457cc46d.css.map": "/static/css/main.457cc46d.css.map",
-    "main.0bad6b29.js.map": "/static/js/main.0bad6b29.js.map",
+    "main.fa798b89.js.map": "/static/js/main.fa798b89.js.map",
     "453.40fbd8ec.chunk.js.map": "/static/js/453.40fbd8ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.457cc46d.css",
-    "static/js/main.0bad6b29.js"
+    "static/js/main.fa798b89.js"
   ]
 }
