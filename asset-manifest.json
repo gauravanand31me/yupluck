@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3d361b0.css",
-    "main.js": "/static/js/main.6c7e42fa.js",
+    "main.css": "/static/css/main.6278a660.css",
+    "main.js": "/static/js/main.763247ad.js",
     "static/js/453.40fbd8ec.chunk.js": "/static/js/453.40fbd8ec.chunk.js",
     "static/media/yupluck app.png": "/static/media/yupluck app.012d2920148e4da2e149.png",
     "static/media/yupluck-promo-banner.png": "/static/media/yupluck-promo-banner.8c3bebf014a8c2e34cf4.png",
@@ -12,12 +12,12 @@
     "static/media/success.mpeg": "/static/media/success.55a17596202a3872e3b3.mpeg",
     "static/media/fail.mpeg": "/static/media/fail.221aaf1492ddba90c447.mpeg",
     "index.html": "/index.html",
-    "main.f3d361b0.css.map": "/static/css/main.f3d361b0.css.map",
-    "main.6c7e42fa.js.map": "/static/js/main.6c7e42fa.js.map",
+    "main.6278a660.css.map": "/static/css/main.6278a660.css.map",
+    "main.763247ad.js.map": "/static/js/main.763247ad.js.map",
     "453.40fbd8ec.chunk.js.map": "/static/js/453.40fbd8ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3d361b0.css",
-    "static/js/main.6c7e42fa.js"
+    "static/css/main.6278a660.css",
+    "static/js/main.763247ad.js"
   ]
 }
