@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6278a660.css",
+    "main.css": "/static/css/main.1220df9d.css",
     "main.js": "/static/js/main.b57ee71c.js",
     "static/js/453.40fbd8ec.chunk.js": "/static/js/453.40fbd8ec.chunk.js",
+    "static/media/yupluck-hero.png": "/static/media/yupluck-hero.d2f0d711ae77c4c7e6cb.png",
     "static/media/yupluck app.png": "/static/media/yupluck app.012d2920148e4da2e149.png",
     "static/media/yupluck-promo-banner.png": "/static/media/yupluck-promo-banner.8c3bebf014a8c2e34cf4.png",
     "static/media/yupluck app 3.png": "/static/media/yupluck app 3.a79f81d13f5155f5ba48.png",
     "static/media/hero-background.jpg": "/static/media/hero-background.d3307ee3113fa5a06412.jpg",
-    "static/media/yupluck-hero.png": "/static/media/yupluck-hero.37a81f98075086d327ee.png",
     "static/media/logo3.png": "/static/media/logo3.b510b307d6f836b0566a.png",
     "static/media/success.mpeg": "/static/media/success.55a17596202a3872e3b3.mpeg",
     "static/media/fail.mpeg": "/static/media/fail.221aaf1492ddba90c447.mpeg",
     "index.html": "/index.html",
-    "main.6278a660.css.map": "/static/css/main.6278a660.css.map",
+    "main.1220df9d.css.map": "/static/css/main.1220df9d.css.map",
     "main.b57ee71c.js.map": "/static/js/main.b57ee71c.js.map",
     "453.40fbd8ec.chunk.js.map": "/static/js/453.40fbd8ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6278a660.css",
+    "static/css/main.1220df9d.css",
     "static/js/main.b57ee71c.js"
   ]
 }
