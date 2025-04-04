@@ -1,27 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.ae0362fd.css",
-    "main.js": "/static/js/main.be90e8b8.js",
-    "static/js/453.1ceeaf73.chunk.js": "/static/js/453.1ceeaf73.chunk.js",
+    "main.css": "/static/css/main.498d1167.css",
+    "main.js": "/static/js/main.1bd298f6.js",
+    "static/js/453.40fbd8ec.chunk.js": "/static/js/453.40fbd8ec.chunk.js",
     "static/media/yupluck-hero.png": "/static/media/yupluck-hero.d2f0d711ae77c4c7e6cb.png",
     "static/media/yupluck app.png": "/static/media/yupluck app.012d2920148e4da2e149.png",
     "static/media/yupluck-promo-banner.png": "/static/media/yupluck-promo-banner.8c3bebf014a8c2e34cf4.png",
     "static/media/yupluck app 3.png": "/static/media/yupluck app 3.a79f81d13f5155f5ba48.png",
     "static/media/hero-background.jpg": "/static/media/hero-background.d3307ee3113fa5a06412.jpg",
-    "static/media/Payments.PNG": "/static/media/Payments.77b71dc3a2294a28ec74.PNG",
     "static/media/logo3.png": "/static/media/logo3.b510b307d6f836b0566a.png",
-    "static/media/Slot.png": "/static/media/Slot.0cc831012b1798bd2308.png",
-    "static/media/BankDetails.PNG": "/static/media/BankDetails.7dc43545681798f25c6e.PNG",
     "static/media/success.mpeg": "/static/media/success.55a17596202a3872e3b3.mpeg",
     "static/media/fail.mpeg": "/static/media/fail.221aaf1492ddba90c447.mpeg",
-    "static/media/Equipment.PNG": "/static/media/Equipment.09f1f2e345f93d3ca590.PNG",
     "index.html": "/index.html",
-    "main.ae0362fd.css.map": "/static/css/main.ae0362fd.css.map",
-    "main.be90e8b8.js.map": "/static/js/main.be90e8b8.js.map",
-    "453.1ceeaf73.chunk.js.map": "/static/js/453.1ceeaf73.chunk.js.map"
+    "main.498d1167.css.map": "/static/css/main.498d1167.css.map",
+    "main.1bd298f6.js.map": "/static/js/main.1bd298f6.js.map",
+    "453.40fbd8ec.chunk.js.map": "/static/js/453.40fbd8ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae0362fd.css",
-    "static/js/main.be90e8b8.js"
+    "static/css/main.498d1167.css",
+    "static/js/main.1bd298f6.js"
   ]
 }
