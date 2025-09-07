@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn with Yupluck Challenges - Fun & Rewarding!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: #2d3436;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .particle-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .particle {
+            position: absolute;
+            background: rgba(46, 204, 113, 0.5);
+            border-radius: 50%;
+            animation: float 10s infinite linear;
+        }
+        .header {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .logo img {
+            height: 45px;
+            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+        }
+        .cta-button {
+            background: #27ae60;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.5);
+        }
+        .hero-section {
+            padding: 140px 0 80px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1517836357463-d25dfead9731?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+            opacity: 0.25;
+            z-index: -1;
+            filter: brightness(0.8);
+        }
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 3px 12px rgba(0,0,0,0.3);
+            animation: zoomIn 1s ease-out;
+        }
+        .hero-title span {
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        .start-section {
+            background: linear-gradient(135deg, #27ae60, #219653);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin: 2rem auto;
+            max-width: 1400px;
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .start-section .container {
+            position: relative;
+            z-index: 1;
+        }
+        .start-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease-out;
+        }
+        .start-date {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        .start-days {
+            font-size: 2rem;
+            font-weight: 600;
+            background: linear-gradient(90deg, #2ecc71, #27ae60);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: pulse 2s infinite;
+        }
+        .start-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+            z-index: 0;
+        }
+        .earning-section {
+            background: #f7f9fc;
+            padding: 100px 0;
+            margin: 2rem auto;
+            max-width: 1400px;
+            border-radius: 30px;
+            box-shadow: 0 15px 60px rgba(0,0,0,0.15);
+        }
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 4rem;
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 1s ease-out;
+        }
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            padding: 0 30px;
+        }
+        .step-card {
+            background: linear-gradient(135deg, #ffffff, #e8f5e9);
+            padding: 3rem;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            animation: slideInUp 0.9s ease-out forwards;
+            opacity: 0;
+            transform: translateY(70px);
+        }
+        .step-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(46, 204, 113, 0.3), transparent);
+            transition: transform 0.6s ease;
+        }
+        .step-card:hover::before {
+            transform: scale(1.8);
+        }
+        .step-card:nth-child(1) { animation-delay: 0.2s; }
+        .step-card:nth-child(2) { animation-delay: 0.4s; }
+        .step-card:nth-child(3) { animation-delay: 0.6s; }
+        .step-card:nth-child(4) { animation-delay: 0.8s; }
+        .step-card:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+        }
+        .step-number {
+            font-size: 2.8rem;
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            animation: bounceIn 1s ease-out;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .step-icon {
+            font-size: 4rem;
+            margin-bottom: 1.2rem;
+            animation: pulse 2.5s infinite;
+            color: #27ae60;
+        }
+        .step-title {
+            font-size: 1.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #2d3436;
+        }
+        .step-description {
+            font-size: 1.1rem;
+            color: #636e72;
+            line-height: 1.7;
+        }
+        .earn-highlight {
+            background: linear-gradient(90deg, #2ecc71, #27ae60);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #27ae60, #219653);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.25), transparent);
+            z-index: -1;
+        }
+        .cta-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 3px 12px rgba(0,0,0,0.3);
+        }
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2.5rem 0;
+            flex-wrap: wrap;
+        }
+        .download-btn {
+            background: #fff;
+            color: #2d3436;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        .download-btn img {
+            height: 40px;
+        }
+        .download-btn:hover {
+            transform: scale(1.12);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+        .footer {
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #2ecc71;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #27ae60;
+        }
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.85); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.25); }
+            100% { transform: scale(1); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1.4rem; }
+            .section-title { font-size: 2.2rem; }
+            .start-title { font-size: 2rem; }
+            .start-date, .start-days { font-size: 1.5rem; }
+            .steps-container { grid-template-columns: 1fr; }
+            .download-buttons { flex-direction: column; align-items: center; }
+            .download-btn { width: 85%; max-width: 320px; }
+            .download-btn img { height: 35px; }
+        }
+        @media (max-width: 576px) {
+            .hero-section { padding: 100px 0 50px; }
+            .start-section { padding: 40px 0; }
+            .cta-title { font-size: 2.2rem; }
+            .step-card { padding: 2rem; }
+            .step-title { font-size: 1.6rem; }
+            .logo { font-size: 1.6rem; }
+            .logo img { height: 35px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div class="particle-bg" id="particle-bg"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="https://yupluck.com/static/media/logo3.bf6d19d49a2de3978a12.png" alt="Yupluck Logo">
+                Yupluck
+            </a>
+           
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <h1 class="hero-title">Challenge & <span>Earn</span> with Friends!</h1>
+            <p class="hero-subtitle">Create epic fitness challenges, get your squad moving, and pocket ₹100 for every friend who joins!</p>
+        </div>
+    </section>
+
+    <!-- Starting From Section -->
+    <section class="start-section">
+        <div class="start-bg"></div>
+        <div class="container">
+            <h2 class="start-title">Payment on Challenge Starts Soon!</h2>
+            <p class="start-date">September 14, 2025, 7:00 PM IST</p>
+         
+        </div>
+    </section>
+
+    <!-- Earning Steps Section -->
+    <section class="earning-section">
+        <div class="container">
+            <h2 class="section-title">Score Cash in 4 Epic Steps</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📹</div>
+                    <h3 class="step-title">Drop Your Video</h3>
+                    <p class="step-description">Capture a killer workout or fitness move. Upload it to Yupluck and set the vibe!</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🎯</div>
+                    <h3 class="step-title">Make It a Challenge</h3>
+                    <p class="step-description">Tag your video as a challenge with a fun goal, like "20 jumping jacks!" Keep it fitness-fresh.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">📲</div>
+                    <h3 class="step-title">Share with Your Squad</h3>
+                    <p class="step-description">Blast the challenge to your friends via Yupluck, WhatsApp, or socials. Get them pumped!</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">💸</div>
+                    <h3 class="step-title">Earn ₹100 Per Join</h3>
+                    <p class="step-description">When your friends join and drop a valid challenge video, you snag <span class="earn-highlight">₹100 instantly!</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <h2 class="cta-title">Jump Into the Fitness Vibe!</h2>
+            <p>Download Yupluck, start challenging, and turn your fitness game into cash rewards!</p>
+            <div class="download-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.yupluck.mepluck" target="_blank" rel="noopener noreferrer" class="download-btn">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                    Get it on Google Play
+                </a>
+                <a href="https://apps.apple.com/in/app/yupluck/id6737851845" target="_blank" rel="noopener noreferrer" class="download-btn">
+                    <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store">
+                    Download on the App Store
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Yupluck. All rights reserved. | <a href="mailto:contact@yupluck.com">contact@yupluck.com</a> | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Particle Effect
+        const particleBg = document.getElementById('particle-bg');
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.width = `${Math.random() * 10 + 5}px`;
+            particle.style.height = particle.style.width;
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.top = `${Math.random() * 100}vh`;
+            particle.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            particleBg.appendChild(particle);
+            setTimeout(() => particle.remove(), 10000);
+        }
+        setInterval(createParticle, 500);
+
+        // Scroll Animation with Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.4 });
+
+        document.querySelectorAll('.step-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Sparkle Effect on Hover
+        document.querySelectorAll('.step-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const sparkle = document.createElement('div');
+                sparkle.style.position = 'absolute';
+                sparkle.style.width = '12px';
+                sparkle.style.height = '12px';
+                sparkle.style.background = '#2ecc71';
+                sparkle.style.borderRadius = '50%';
+                sparkle.style.animation = 'sparkle 0.6s ease-out';
+                sparkle.style.top = `${Math.random() * 100}%`;
+                sparkle.style.left = `${Math.random() * 100}%`;
+                card.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 600);
+            });
+        });
+    </script>
+    <style>
+        @keyframes sparkle {
+            0% { transform: scale(0); opacity: 1; }
+            100% { transform: scale(2.5); opacity: 0; }
+        }
+    </style>
+</body>
+</html>
